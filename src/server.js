@@ -32,6 +32,15 @@ router.get('/', (request, env) => {
   return new Response(`👋 ${env.DISCORD_APPLICATION_ID}`);
 });
 
+router.get('/koi', async () => {
+  const koi = await getKoi();
+  return new JsonResponse({
+    data: {
+      content: koi,
+    },
+  });
+});
+
 /**
  * Main route for all requests sent from Discord.  All incoming messages will
  * include a JSON payload described here:
