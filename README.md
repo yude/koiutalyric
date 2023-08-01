@@ -15,6 +15,9 @@
   * `DISCORD_PUBLIC_KEY`
   * `DISCORD_TOKEN`
 
+* Interactions Endpoint URL should be your URL of app on Cloudflare Workers (e.g. `https://foo.bar.workers.dev/`)
+  * You can set this from `Discord Developer Portal` -> `General Information`
+
 ## License
 
 The MIT License
